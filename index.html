@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  
+
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  
+
   <!-- header -->
-  <header>
-    <h2>Simple, traffic-based pricing</h2>
-    <p>Sign-up for our 30-day trial. No credit card required.</p>
-  </header>
+  <div class="bg-pattern">
+    <img src="images/bg-pattern.svg" alt="">
+    <header>
+      <h2>Simple, traffic-based pricing</h2>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+  </div>  
   
+
   <!-- Interactive box -->
   <div class="container">
 
     <div class="pageviews">
-      <span><!-- function --></span><p>Pageviews</p>
+      <span>
+        <!-- function --></span>
+      <p>Pageviews</p>
     </div>
-    
+
     <div class="graph-bar">
       <div class="scrl-btn"></div><!-- si deve mettere un bottone scorrevole -->
     </div>
-    
+
     <div class="price">
-      <h1>$ <span><!-- function --></span></h1>
+      <h1>$ <span>
+          <!-- function --></span></h1>
       <p>/month</p>
     </div>
 
@@ -56,11 +72,12 @@
       <button>Start my trial</button>
     </dvi>
   </div>
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">A. Jawid Fakhari</a>.
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
