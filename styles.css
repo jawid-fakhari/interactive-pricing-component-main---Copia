@@ -1,12 +1,49 @@
 body {
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
+    margin: 0;
 }
 p {
     color: hsl(225, 20%, 60%);
 }
-h1, h2 {
+h1 {
     color: hsl(227, 35%, 25%);
 }
+/* <!-- header --> */
+.head {
+    text-align: center;
+    border: 1px solid red;
+    max-width: 100%;
+}
+.head__bg {
+    overflow: hidden;
+    position: relative;
+}
+.head header {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    left: 0; right: 0;
+    z-index: 1;
+}
+.head header h1 {
+    font-size: 20px;
+}
+.head header p {
+    padding: 0 80px;
+}
+.head .header__img {
+    position: absolute;
+    left: 0; right: 0;
+    top: 80px;
+}
+/* <!-- Interactive box --> */
 
-
+@media (min-width: 375px) {
+    #head__img {
+        width: 100%;
+    }
+    .head header h1 {
+        font-size: 28px;
+    }
+}
