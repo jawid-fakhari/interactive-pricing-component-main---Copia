@@ -1,7 +1,8 @@
 body {
+    background-color: hsl(230, 100%, 99%);
     font-family: 'Manrope', sans-serif;
-    font-size: 15px;
     margin: 0;
+    font-size: 12px;
 }
 p {
     color: hsl(225, 20%, 60%);
@@ -11,9 +12,8 @@ h1 {
 }
 /* <!-- header --> */
 .head {
-    text-align: center;
-    border: 1px solid red;
     max-width: 100%;
+    text-align: center;
 }
 .head__bg {
     overflow: hidden;
@@ -31,6 +31,7 @@ h1 {
 }
 .head header p {
     padding: 0 80px;
+    font-size: 15px;
 }
 .head .header__img {
     position: absolute;
@@ -38,12 +39,102 @@ h1 {
     top: 80px;
 }
 /* <!-- Interactive box --> */
+.w-600 {
+    font-weight: 600;
+}
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 25px 2px rgba(63, 62, 62, 0.09);
+    padding: 20px 0 40px;
+    margin: -150px auto 30px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 310px;
+}
+.pageviews p {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 12px;
+}
+/* <!-- si deve mettere un bottone scorrevole --> */
+/* <!-- si deve mettere un bottone scorrevole --> */
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.choose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+}
+/* <!-- si deve mettere un bottone --> */
+/* <!-- si deve mettere un bottone --> */
+.choose__disc {
+    border-radius: 10px;
+    
+    background-color: hsl(14, 92%, 95%);
+    height: 20px;
+    width: 40px;
+    font-size: 9px;
+}
 
+#disc__txt {
+    color: hsl(15, 100%, 70%);
+    padding: 4px; margin-top: 0;
+}    
+#disc__txt span {
+    display: none;
+}
+hr {
+    width: 100%;
+    border-top: 1px solid hsl(230, 100%, 99%);
+    margin: 20px 0;
+}
+.features {
+    margin-bottom: 30px;
+}
+.features img {
+    margin-right: 8px;
+}
+.start-btn button {
+    background-color: hsl(227, 35%, 25%);
+    border-radius: 40px;
+    color: hsl(226, 100%, 87%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+    padding: 10px 40px;
+}
 @media (min-width: 375px) {
     #head__img {
         width: 100%;
     }
     .head header h1 {
         font-size: 28px;
+    }
+    .container {
+        width: 600px;
+    }
+    .choose__disc {
+        width: 80px;
+    }
+    #disc__txt span {
+        display: inline-block;
+    }
+    .feature-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 250px;
+    }
+    .features {
+        text-align: left;
+        margin-bottom: unset;
     }
 }
