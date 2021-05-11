@@ -111,6 +111,12 @@ hr {
     font-size: 10px;
     padding: 10px 40px;
 }
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
 @media (min-width: 375px) {
     #head__img {
         width: 100%;
@@ -137,4 +143,5 @@ hr {
         text-align: left;
         margin-bottom: unset;
     }
+
 }
