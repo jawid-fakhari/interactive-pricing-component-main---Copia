@@ -59,8 +59,43 @@ h1 {
     letter-spacing: 0.1em;
     font-size: 12px;
 }
-/* <!-- si deve mettere un bottone scorrevole --> */
-/* <!-- si deve mettere un bottone scorrevole --> */
+/* <!-- range slider start --> */
+.slideContainer {
+    width: 75%;
+    margin: 0 auto;
+}
+.slider {
+    -webkit-appearance: none;
+    background: linear-gradient(90deg, hsl(224, 65%, 95%) 60%, hsl(224, 65%, 95%) 60%);
+    border-radius: 6px;
+    width: 100%;
+    height: 10px;
+    outline: none;
+}
+/* new thumb for google chrome browser */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background-color: hsl(174, 86%, 45%);
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+}
+/* new thumb for mozilla browser */
+.slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(174, 86%, 45%);
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+}
+
+/* <!-- range slider end --> */
 .price {
     display: flex;
     justify-content: center;

@@ -47,17 +47,16 @@
   <div class="container">
 
     <div class="pageviews">
-      <p class="w-600">100K Pageviews</p>
+      <p class="w-600"><span id="value"></span> K Pageviews</p>
     </div>
 
-    <div class="graph-bar">
-      <div class="scrl-btn">
-        <!-- si deve mettere un bottone scorrevole -->
-      </div>
+    <!-- range slider  -->
+    <div class="slideContainer">
+      <input type="range" min="1" max="100" value="1" id="myRange" class="slider">
     </div>
 
     <div class="price">
-      <h1>$ 16.00</h1>
+      <h1>$ <span id="price"></span></h1>
       <p>/month</p>
     </div>
 
