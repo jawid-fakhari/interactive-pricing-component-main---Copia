@@ -9,7 +9,7 @@ pricePerMonth.innerHTML = slider.value * 0.16;
 
 slider.oninput = function() {
     output.innerHTML = this.value;
-    pricePerMonth.innerHTML = this.value * 0.16;
+    pricePerMonth.innerHTML = Math.round(this.value * 0.16);
 }
 
 // change the value of linear-gradient in range slidet
